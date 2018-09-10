@@ -29,6 +29,10 @@
             <input type="text" class="form-control" id="streetaddress" placeholder="5555 Everyhwere Street">
           </div>
           <div class="form-group mr-2">
+            <label for="city"> <span class="glyphicon glyphicon-stats"></span> City</label>
+            <input type="text" class="form-control" id="city" placeholder="Everytown">
+          </div>
+          <div class="form-group mr-2">
             <label for="zipcode"><span class="glyphicon glyphicon-road"></span> Zip Code</label>
             <input type="number" id="zipcode" class="form-control" placeholder="00000">
           </div>
@@ -111,14 +115,18 @@
               <h4 class="modal-title" id="successmodalLabel">Your payment has been processed!</h4>
             </div>
             <div class="modal-body">
-              <p>Thanks for your order, <span id="customer-name"></span>. Your order containing:</p>
+              <p>Thanks for your order, <span id="customerName"></span>. Your order containing:</p>
               <ul>
                 <li>Charlie's Chalk Dust Pacha Mama Fuji Apple, 120ml, 3mg</li>
                 <li>VooPoo Mojo Starter's kit</li>
                 <li>Oyaji Will's Island Vape T-Shirt (XL)</li>
               </ul>
-              <p>will be shipped to you at <span class="customer-address"></span>.</p>
-              <p>An email confirming your oder will be sent to <span class="customer-email"></span>.</p>
+              <p>will be shipped to:</p>
+              <p><span class="streetAddress"></span></p>
+              <p><span class="customerCity"></span>, <span class="customerState"></span></p>
+              <p><span class="customerZipCode"></span></p>
+              <p><span class="customerCountry"></span></p>
+              <p>An email confirming your oder will be sent to <span class="customerEmail"></span>.</p>
               <p>Feel free to <a href="mailto:support@oyajiwiru.co.jp">contact</a> us with any questions you have.</p>
             </div>
             <div class="modal-footer">
